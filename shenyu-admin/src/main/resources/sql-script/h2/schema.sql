@@ -352,7 +352,7 @@ CREATE TABLE IF NOT EXISTS `operation_record_log`
 -- ----------------------------
 CREATE TABLE IF NOT EXISTS `alert_template`
 (
-    `id`            bigint          NOT NULL AUTO_INCREMENT COMMENT 'primary key id',
+    `id`            bigint          NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'primary key id',
     `name`          varchar(255)    NOT NULL COMMENT 'alert template name',
     `strategy_name` varchar(255)    NOT NULL COMMENT 'alert template strategy name',
     `content`       varchar(1000)   NOT NULL COMMENT 'alert template content',
